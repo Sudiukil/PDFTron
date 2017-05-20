@@ -1,0 +1,9 @@
+#!/bin/sh
+
+arg=$(realpath "$1")
+
+cd $(dirname "$0")
+
+npm start "$arg"
+
+exit 0
