@@ -16,9 +16,9 @@ function createWindow() {
 	mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
-		frame: false
 	})
 
+	mainWindow.setMenu(null);
 	mainWindow.loadURL(frameURL);
 
 	mainWindow.on("closed", function() {
