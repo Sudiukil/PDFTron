@@ -24,6 +24,8 @@ function createWindow() {
 	mainWindow.on("closed", function() {
 		mainWindow = null
 	})
+
+	require("./menu/main.js")
 }
 
 app.on("ready", createWindow)
