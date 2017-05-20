@@ -5,7 +5,8 @@ const BrowserWindow = electron.BrowserWindow // Browser window for Electron
 const qs = require("querystring") // Used to generate query string for pdf.js
 
 const pdfjs = "file://" + __dirname + "/pdfjs/web/viewer.html" // Root URL for Electron app (pdf.js page)
-const query = qs.stringify({file: "file://" + process.argv[2]}) // Generate query string for pdf.js, to open the requested PDF file
+const query = qs.stringify({file: "file://" + process.argv.slice(-1)[0]}) // Generate query string for pdf.js, to open the requested PDF file
+const frameURL = pdfjs + "?" + query
 
 // Needed by Electron
 let mainWindow
@@ -18,7 +19,7 @@ function createWindow() {
 		frame: false
 	})
 
-	mainWindow.loadURL(pdfjs + "?" + query);
+	mainWindow.loadURL(frameURL);
 
 	mainWindow.on("closed", function() {
 		mainWindow = null
