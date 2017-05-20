@@ -10,10 +10,15 @@ Because pdf.js + Electron = ❤
 
 ### Quickstart
 
+You can use a pre-built version of PDFTron available [here](https://github.com/Sudiukil/PDFTron/releases).
+
+If you want, you can also run it from source :
+
 1. `git clone https://github.com/Sudiukil/PDFTron && cd PDFTron`
 2. `npm install`
-3. `./pdftron <file.pdf>`
-4. Enjoy.
+3. `npm start <file.pdf>`
+
+Or build it yourself (resume from step previous step 2) by running `./build.sh <platform>`, with *platform* being linux, win32, darwin or all.
 
 ## License
 
