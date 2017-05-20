@@ -2,6 +2,8 @@
 
 Because pdf.js + Electron = ❤
 
+PDFTron is a simple and lightweight PDF reader which is simply [Mozilla's pdf.js](https://github.com/mozilla/pdf.js) embedded in an Electron window. See it as a standalone desktop version of pdf.js.
+
 ## Getting started
 
 ### Environment
