@@ -2,7 +2,7 @@
 
 arg=$(realpath "$1")
 
-cd $(dirname "$0")
+cd $(dirname $(realpath "$0"))
 
 npm start "$arg"
 

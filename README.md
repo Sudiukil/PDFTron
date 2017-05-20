@@ -11,8 +11,9 @@ Because pdf.js + Electron = ❤
 ### Quickstart
 
 1. `git clone https://github.com/Sudiukil/PDFTron && cd PDFTron`
-2. `./pdftron <file.pdf>`
-3. Enjoy.
+2. `npm install`
+3. `./pdftron <file.pdf>`
+4. Enjoy.
 
 ## License
 
