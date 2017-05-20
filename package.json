@@ -9,7 +9,7 @@
 	},
 	"author": "Quentin \"Sudiukil\" Sonrel",
 	"license": "ISC",
-	"dependencies": {
+	"devDependencies": {
 		"electron": "~1.6.2",
 		"electron-packager": "~8.7.0"
 	}
