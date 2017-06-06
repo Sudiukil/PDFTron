@@ -1,6 +1,5 @@
 *.swp
 node_modules
+build.sh
 archive.sh
-pdftron-*.zip
-pdftron-*.tar.gz
-pdftron-linux-x64
+pdftron-*
