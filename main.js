@@ -25,6 +25,15 @@ function createWindow() {
 		mainWindow = null
 	})
 
+	var wc = mainWindow.webContents
+
+	wc.on("will-navigate", function(e, url) {
+		if(url != wc.getURL()) {
+			e.preventDefault()
+			electron.shell.openExternal(url)
+		}
+	});
+
 	require("./menu/main.js")
 }
 

@@ -1,2 +1,6 @@
 *.swp
 node_modules
+archive.sh
+pdftron-*.zip
+pdftron-*.tar.gz
+pdftron-linux-x64
